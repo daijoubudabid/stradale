@@ -1,0 +1,117 @@
+.blog-info {
+  margin-inline: auto;
+  padding: 100px 30px;
+
+  p {
+    color: #999999;
+    line-height: 29px;
+    font-family: "Nunito", sans-serif;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.199);
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+  }
+
+  blockquote {
+    font-size: 30px;
+    color: #fff;
+    font-weight: 500;
+    line-height: 44.8px;
+
+    span {
+      display: block;
+      font-size: 14px;
+      line-height: 44.8px;
+      margin-top: 20px;
+      font-weight: 400;
+    }
+  }
+
+  .blog-tags {
+    margin-top: 40px;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px 0;
+
+    span {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      font-size: 12px;
+      font-family: "Nunito", sans-serif;
+      color: white;
+
+      a {
+        text-decoration: none;
+        color: white;
+        margin-left: 3px;
+        font-family: "Nunito", sans-serif;
+        transition: color 0.3s ease-in-out;
+
+        &:hover {
+          color: #ca8e46;
+        }
+      }
+    }
+  }
+
+  .comment-title {
+    padding-top: 80px;
+    padding-bottom: 20px;
+    color: white;
+    font-weight: 700;
+    line-height: 22px;
+    font-size: 18px;
+  }
+
+  .blog-comments,
+  .blog-comments-nested,
+  .blog-comments-single {
+    margin-bottom: 30px;
+    display: flex;
+    gap: 20px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.199);
+
+    h6 {
+      font-size: 16px;
+      color: #fff;
+      font-weight: 700;
+    }
+    span {
+      font-size: 14px;
+      font-family: "Nunito", sans-serif;
+      color: #ca8e46;
+      line-height: 26px;
+
+      a {
+        text-decoration: none;
+        color: #ca8e46;
+        padding-left: 15px;
+        margin-left: 15px;
+        border-left: 1px solid grey;
+      }
+    }
+  }
+
+  .blog-comments-nested {
+    margin-bottom: 0;
+    border: none;
+
+    p {
+      border: none;
+    }
+  }
+
+  .blog-comments-single {
+    margin-bottom: 0;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.199);
+
+    p {
+      border: none;
+      margin-bottom: 0;
+    }
+  }
+}

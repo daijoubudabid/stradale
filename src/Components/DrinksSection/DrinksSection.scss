@@ -1,0 +1,36 @@
+.drinks-section {
+  background: url("../../assets/parallax-1.jpeg") fixed;
+  padding: 140px 0px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  position: relative;
+
+  h3 {
+    font-size: 120px;
+    font-family: "Mrs Saint Delafield", cursive;
+    line-height: 60px;
+    margin-top: 40px;
+    color: #ca8e46;
+  }
+  h5 {
+    font-size: 32px;
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    line-height: 10px;
+  }
+}
+
+// responsive
+
+@media (width <= 768px) {
+  .drinks-section {
+    h3 {
+      font-size: 90px;
+    }
+  }
+}

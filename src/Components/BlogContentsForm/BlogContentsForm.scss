@@ -1,0 +1,46 @@
+.blog-contents-form{
+  padding-top: 50px;
+  h4{
+    color: white;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+  }
+  label{
+    color: white;
+    font-family: 'Nunito', sans-serif;
+    padding: 10px 0;
+  }
+  input,textarea{
+    width: 100%;
+    background: transparent;
+    border: 2px solid rgba(128, 128, 128, 0.308);
+    padding: 10px;
+    color: white;
+
+    &:focus {
+      background-color: #ca8f4628;
+      border: 2px solid #ca8e46;
+      outline: none;
+    }
+  }
+
+  button{
+    background-color: #ca8e46;
+    border: 2px solid rgba(128, 128, 128, 0.452);
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 10px 20px;
+    transition: all 0.3s ease-in-out;
+    margin-top: 20px;
+
+
+    &:hover{
+      background-color: transparent;
+      border: 2px solid rgba(128, 128, 128, 0.568);
+      transition: all 0.3s ease-in-out;
+      color: white;
+    }
+  }
+}

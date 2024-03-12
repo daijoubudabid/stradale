@@ -1,0 +1,74 @@
+.drinks-menu {
+  padding: 100px 0px;
+  color: white;
+  .menu-titles {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    position: relative;
+
+    h3 {
+      line-height: 28.8px;
+      letter-spacing: 4px;
+      word-spacing: 0px;
+      margin: 0px;
+      padding: 0px;
+      font-weight: 700;
+      font-size: 20px;
+      text-transform: uppercase;
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        border-bottom: 1px solid #ffffff;
+        top: 14px;
+        margin-left: 10px;
+        width: 30px;
+      }
+    }
+
+    h5 {
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 28.8px;
+    }
+    small {
+      font-size: 14px;
+      line-height: 28.8px;
+      font-weight: 600;
+      color: #c18843;
+    }
+  }
+
+  .menu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    border-bottom: 0.1rem solid rgba(128, 128, 128, 0.262);
+    border-top: 1px solid transparent;
+    margin-top: 5px;
+
+    p {
+      font-family: "Nunito", sans-serif;
+      line-height: 28.8px;
+      margin-bottom: 0;
+      text-wrap: nowrap;
+    }
+
+    h6 {
+      font-size: 18px;
+      line-height: 27px;
+      font-weight: 400;
+      font-family: 'Nunito', sans-serif;
+
+      small {
+        color: #ca8e46;
+        font-family: "Nunito", sans-serif;
+      }
+    }
+  }
+}

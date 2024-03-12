@@ -1,0 +1,34 @@
+.foods-section {
+  background: url("../../assets/parallax-2.jpeg") fixed;
+  padding: 140px 0px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+
+  h3 {
+    font-size: 120px;
+    font-family: "Mrs Saint Delafield", cursive;
+    line-height: 60px;
+    color: #ca8e46;
+  }
+  h5 {
+    font-size: 32px;
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    line-height: 10px;
+  }
+}
+
+// responsive
+
+@media (max-width: 768px) {
+  .foods-section {
+    h3 {
+      font-size: 90px;
+    }
+  }
+}

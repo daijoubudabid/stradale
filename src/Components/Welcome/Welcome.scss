@@ -1,0 +1,204 @@
+.welcome-section {
+  background-color: black;
+  padding-top: 150px;
+  padding-bottom: 80px;
+  transition: all 0.3s ease-in-out;
+
+  .welcome-title {
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 40px;
+
+    h3 {
+      color: #ca8e46;
+      font-size: 120px;
+      font-family: "Mrs Saint Delafield", cursive;
+      line-height: 60px;
+    }
+    span {
+      letter-spacing: 10px;
+      font-size: 32px;
+      line-height: 15px;
+      margin-bottom: 40px;
+      font-family: "Montserrat", sans-serif;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+    p {
+      font-size: 15px;
+      font-weight: 400;
+      color: #9e9b9b;
+      padding: 0;
+      line-height: 1.8em;
+      word-spacing: 0px;
+      width: 55%;
+    }
+  }
+
+  .limited-product-1,
+  .limited-product-2 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+    transition: all 0.3s ease-in-out;
+    margin-bottom: 20px;
+    cursor: pointer;
+
+    &:hover img{
+      transform: scale(1.1);
+    }
+
+    img {
+      width: 40%;
+      object-fit: cover;
+      object-position: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .product-details{
+      h4 {
+        background: #111111;
+        font-size: 12px;
+        letter-spacing: 0.1em;
+        padding: 5px 10px;
+        text-transform: uppercase;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 600;
+        display: inline;
+      }
+      h3 {
+        font-size: 2.2rem;
+        font-weight: 700;
+        font-family: "Montserrat", sans-serif;
+        padding: 13px 0;
+        span {
+          color: #ca8e46;
+          font-weight: 700;
+          font-family: "Montserrat", sans-serif;
+        }
+      }
+  
+      button {
+        background: transparent;
+        color: white;
+        padding: 6px 30px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        border: 2px solid rgba(255, 255, 255, 0.281);
+        font-weight: 700;
+        font-family: "Montserrat", sans-serif;
+        font-size: 13px;
+        transition: all 0.3s ease-in-out;
+        margin-bottom: 10px;
+  
+        &:hover {
+          background: #ca8e46;
+          border: 2px solid transparent;
+        }
+      }
+  
+      p {
+        font-size: 14px;
+        font-style: italic;
+        font-family: "Nunito", sans-serif;
+        font-weight: 500;
+      }
+    }
+  }
+
+  .limited-product-1 {
+    background: url("../../assets/mocha-bg.jpeg");
+    background-position: center;
+    background-size: cover;
+    padding: 30px 0;
+    background-repeat: no-repeat;
+  }
+
+  .limited-product-2 {
+    background: url("../../assets/caramel-bg.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 30px 0;
+  }
+}
+
+// responsive
+
+@media (width <= 992px) {
+  .welcome-section {
+    .welcome-title {
+      p {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (width <= 768px) {
+  .welcome-section {
+    padding: 150px 20px;
+
+    .welcome-title {
+      p {
+        width: 100%;
+      }
+    }
+    .limited-product-1,
+    .limited-product-2 {
+      .product-details {
+        h3 {
+          font-size: 36px;
+        }
+        h4 {
+          font-size: 13px;
+        }
+        p {
+          font-size: 14px;
+        }
+
+        button {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+@media (width <= 430px) {
+  .welcome-section {
+    padding: 150px 20px;
+    .welcome-title {
+      h3 {
+        font-size: 90px;
+      }
+      p {
+        width: 100%;
+      }
+    }
+    .limited-product-1,
+    .limited-product-2 {
+      .product-details {
+        h3 {
+          font-size: 20px;
+        }
+        h4 {
+          font-size: 6px;
+        }
+        p {
+          font-size: 11px;
+        }
+
+        button {
+          font-size: 7px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,102 @@
+.special-item-section {
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+  .text-area {
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    h3 {
+      font-size: 120px;
+      font-family: "Mrs Saint Delafield", cursive;
+      color: #ca8e46;
+      line-height: 30px;
+    }
+    span {
+      font-size: 20px;
+      text-transform: uppercase;
+      font-family: "Montserrat", sans-serif;
+      letter-spacing: 10px;
+      font-size: 32px;
+      line-height: 30px;
+      font-weight: 700;
+    }
+    h4{
+      text-transform: capitalize;
+      font-weight: 700;
+      margin-top: 20px;
+    }
+    p{
+      color: #7D7D7D;
+      font-family: 'Nunito', sans-serif;
+      font-weight: 500;
+      color: #9e9b9b;
+      padding: 0px 90px;
+      margin-top: 20px;
+      line-height: 28px;
+    }
+  }
+
+  .image-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px;
+    position: relative;
+    img {
+      width: 85%;
+      position: relative;
+    }
+    .counter{
+      color: white;
+      background: #ca8e46;
+      width: 150px;
+      height: 150px;
+      position: absolute;
+      border-radius: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      top: 10px;
+      left: 30px;
+
+      span{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 60px;
+        text-transform: capitalize;
+      }
+      p{
+        text-transform: capitalize;
+        font-weight: 600;
+        line-height: 10px;
+      }
+    }
+  }
+}
+
+
+// responsive
+
+@media (width <= 768px){
+  .special-item-section{
+    padding-top: 150px;
+    .text-area{
+      h3{
+        font-size: 90px;
+      }
+
+      p{
+        padding: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,43 @@
+.contact-details-section{
+  padding: 100px 0;
+
+  .details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    .icon{
+      font-size: 48px;
+      color: #CA8E46;
+    }
+    h3{
+      font-size: 22px;
+      color: white;
+      font-weight: 700;
+      line-height: 26.4px;
+      margin: 20px 0;
+    }
+
+    p{
+      color: #999999;
+      font-family: 'Nunito', sans-serif;
+      line-height: 28.8px;
+    }
+  }
+}
+
+.parallax{
+  background: url('../../assets/parallax-5.jpg') fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  .details{
+
+    p{
+      color: white;
+    }
+  }
+}

@@ -1,0 +1,98 @@
+.blog-section {
+  padding: 130px 0;
+  background: url("../../assets/parallax-3.jpeg") fixed;
+  background-size: cover;
+  background-position: center;
+
+  .blog-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+    h3 {
+      font-size: 120px;
+      font-family: "Mrs Saint Delafield", cursive;
+      line-height: 60px;
+      color: #ca8e46;
+    }
+    span {
+      font-size: 32px;
+      font-family: "Montserrat", sans-serif;
+      color: white;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 10px;
+      line-height: 10px;
+    }
+  }
+  .blog-card {
+    border: 1px solid rgba(255, 255, 255, 0.397);
+    overflow: hidden;
+    position: relative;
+    color: white;
+
+    .card {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      padding-left: 20px;
+      padding-right: 20px;
+      background-color: transparent;
+      color: white;
+      border: none;
+
+      .card-body {
+        height: 200px;
+      }
+      .card-header {
+        border: none;
+      }
+      .card-footer {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%);
+        border: none;
+      }
+
+      span {
+        color: #aaaaaa;
+        text-transform: uppercase;
+        font-size: 12px;
+        font-weight: 600;
+        letter-spacing: 2px;
+      }
+      h3 {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 28px;
+      }
+      h5 {
+        font-size: 10px;
+        text-transform: uppercase;
+        letter-spacing: 7px;
+        font-weight: 700;
+        line-height: 12px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -30px;
+      }
+    }
+
+    &:hover img {
+      opacity: 1;
+      transform: scale(1);
+    }
+    img {
+      width: 100%;
+      object-fit: cover;
+      filter: brightness(0.6);
+      opacity: 0;
+      transition: all 0.5s ease-in-out;
+      transform: scale(1.1);
+    }
+  }
+}

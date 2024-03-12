@@ -1,0 +1,56 @@
+.reservation-form {
+  padding: 100px 0;
+  form {
+    color: white;
+
+    h4 {
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 18.8px;
+      margin-bottom: 20px;
+    }
+
+    input,
+    select,textarea {
+      background-color: transparent;
+      color: white;
+      padding: 15px;
+      border: 2px solid rgba(128, 128, 128, 0.452);
+
+      &:focus {
+        background-color: #ca8f4628;
+        border: 2px solid #ca8e46;
+        outline: none;
+      }
+    }
+
+    select {
+      appearance: none;
+      background: url("../../assets/arrow-down-select.png");
+      background-repeat: no-repeat;
+      background-position: right;
+
+      option {
+        color: black;
+      }
+    }
+
+    button{
+      background-color: transparent;
+      border: 2px solid rgba(128, 128, 128, 0.452);
+      color: grey;
+      text-transform: uppercase;
+      font-weight: 600;
+      padding: 10px 20px;
+      transition: all 0.3s ease-in-out;
+
+
+      &:hover{
+        background-color: #ca8e46;
+        border: 2px solid transparent;
+        transition: all 0.3s ease-in-out;
+        color: white;
+      }
+    }
+  }
+}
